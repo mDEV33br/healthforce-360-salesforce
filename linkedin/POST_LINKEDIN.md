@@ -35,7 +35,7 @@ Segregação completa entre a jornada de regulação administrativa e prontuári
 - Metadados versionados no formato Salesforce DX (API 62.0).
 
 📦 O código-fonte completo, arquitetura, dicionário de dados e instruções de deploy estão disponíveis no GitHub:
-🔗 [Inserir link do seu repositório no GitHub: https://github.com/<seu-usuario>/healthforce-360-salesforce]
+🔗 [Inserir link do seu repositório no GitHub: https://github.com/mDEV33br/healthforce-360-salesforce]
 
 Agradeço a todos que acompanham a evolução da tecnologia aplicada à saúde e à IA generativa corporativa. Feedbacks, comentários e conexões são sempre muito bem-vindos! 👇
 

@@ -144,7 +144,7 @@ healthforce360/
 
 ### Passo 1: Clonar o Repositório
 ```bash
-git clone https://github.com/<SEU-USUARIO>/healthforce-360-salesforce.git
+git clone https://github.com/mDEV33br/healthforce-360-salesforce.git
 cd healthforce-360-salesforce
 ```
 
