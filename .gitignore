@@ -1,0 +1,27 @@
+# Salesforce DX
+.sf/
+.sfdx/
+.salesforce/
+.localdevserver/
+
+# Node / dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment and sensitive keys
+.env
+*.jwt
+*.key
+*.pem
+server.key
+server.crt
+
+# Operating System files
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/.salesforce/
+.idea/

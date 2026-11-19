@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exigir_Justificativa_Ao_Pendente</fullName>
+    <active>true</active>
+    <description>Obriga o preenchimento da justificativa de pendência ao mudar o status para Pendente.</description>
+    <errorConditionFormula>ISPICKVAL(Status__c, &quot;Pendente&quot;) &amp;&amp; ISBLANK(TRIM(JustificativaStatus__c))</errorConditionFormula>
+    <errorDisplayField>JustificativaStatus__c</errorDisplayField>
+    <errorMessage>Para sinalizar pendência em uma solicitação, descreva a pendência na justificativa.</errorMessage>
+</ValidationRule>

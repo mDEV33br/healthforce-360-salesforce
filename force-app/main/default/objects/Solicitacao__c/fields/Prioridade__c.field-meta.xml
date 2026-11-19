@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prioridade__c</fullName>
+    <description>Priorização administrativa do fluxo.</description>
+    <label>Prioridade</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Normal</fullName>
+                <default>true</default>
+                <label>Normal</label>
+            </value>
+            <value>
+                <fullName>Prioritária</fullName>
+                <default>false</default>
+                <label>Prioritária</label>
+            </value>
+            <value>
+                <fullName>Urgência Administrativa</fullName>
+                <default>false</default>
+                <label>Urgência Administrativa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

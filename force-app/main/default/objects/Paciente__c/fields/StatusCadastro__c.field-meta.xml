@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusCadastro__c</fullName>
+    <description>Situação cadastral administrativa do paciente sintético.</description>
+    <label>Status do Cadastro</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ativo</fullName>
+                <default>true</default>
+                <label>Ativo</label>
+            </value>
+            <value>
+                <fullName>Em Atualização</fullName>
+                <default>false</default>
+                <label>Em Atualização</label>
+            </value>
+            <value>
+                <fullName>Inativo</fullName>
+                <default>false</default>
+                <label>Inativo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

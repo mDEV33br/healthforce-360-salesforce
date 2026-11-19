@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#008080</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Healthforce 360 - Plataforma Inteligente de Gestão e Jornada Administrativa do Paciente com Agentforce 360.</description>
+    <formFactors>
+        <supportedFormFactor>Small</supportedFormFactor>
+        <supportedFormFactor>Large</supportedFormFactor>
+    </formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Healthforce 360</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Solicitacao__c</tabs>
+    <tabs>Paciente__c</tabs>
+    <tabs>UnidadeSaude__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

@@ -1,0 +1,5 @@
+Name,CodigoCNESSimulado__c,TipoUnidade__c,Municipio__c,CapacidadeAtendimentoDiario__c,Ativo__c
+UBS Jardim Esperança,CNES-100201,Unidade Básica de Saúde (UBS),São Paulo,120,true
+UPA Central 24h,CNES-200302,Unidade de Pronto Atendimento (UPA),São Paulo,250,true
+Centro Especializado Santa Cruz,CNES-300403,Centro de Especialidades Médicas,São Paulo,80,true
+Hospital Geral Metropolitano,CNES-400504,Hospital Geral de Referência,São Paulo,400,true

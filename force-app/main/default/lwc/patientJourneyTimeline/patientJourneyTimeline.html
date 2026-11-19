@@ -1,0 +1,92 @@
+<template>
+    <lightning-card title="Healthforce 360 - Linha do Tempo da Jornada" icon-name="standard:healthcare_procedure">
+        <div class="slds-p-around_medium">
+            <!-- Header de Resumo da Jornada -->
+            <div class="slds-grid slds-wrap slds-grid_align-spread slds-box slds-theme_shade slds-m-bottom_medium header-box">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12">
+                    <p class="slds-text-title_caps slds-text-color_weak">Solicitação Administrativa</p>
+                    <h2 class="slds-text-heading_medium slds-m-top_xx-small">
+                        <strong>{solicitacaoName}</strong> &bull; {pacienteNome}
+                    </h2>
+                    <p class="slds-text-body_small slds-m-top_xx-small">
+                        Unidade Origem: <strong>{unidadeOrigem}</strong> &rarr; Destino: <strong>{unidadeDestino}</strong>
+                    </p>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-text-align_right slds-m-top_small">
+                    <span class={slaBadgeClass}>{slaStatus}</span>
+                    <span class="slds-badge slds-badge_lightest slds-m-left_x-small">{diasEmAberto} dias em aberto</span>
+                </div>
+            </div>
+
+            <!-- Path Visual de Estados -->
+            <div class="slds-path slds-m-bottom_large">
+                <div class="slds-grid slds-path__track">
+                    <div class="slds-grid slds-path__scroller-container">
+                        <ul class="slds-path__nav" role="listbox" aria-orientation="horizontal">
+                            <template for:each={steps} for:item="step">
+                                <li key={step.name} class={step.class} role="presentation">
+                                    <a class="slds-path__link" role="option" tabindex="-1">
+                                        <span class="slds-path__stage">
+                                            <lightning-icon icon-name="utility:check" size="x-small" alternative-text="Concluído"></lightning-icon>
+                                        </span>
+                                        <span class="slds-path__title">{step.label}</span>
+                                    </a>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção de Histórico Cronológico / Linha do Tempo -->
+            <div class="slds-section slds-is-open">
+                <h3 class="slds-section__title slds-theme_offline slds-p-horizontal_small">
+                    <span class="slds-truncate" title="Histórico e Movimentações">Histórico Cronológico e Auditoria</span>
+                </h3>
+                
+                <div class="slds-timeline slds-m-top_medium">
+                    <template if:true={temHistorico}>
+                        <ul class="slds-timeline">
+                            <template for:each={timelineItems} for:item="item">
+                                <li key={item.id}>
+                                    <div class="slds-timeline__item_expandable slds-timeline__item_task slds-is-open slds-m-bottom_small">
+                                        <div class="slds-media">
+                                            <div class="slds-media__figure">
+                                                <lightning-icon icon-name={item.icon} size="small" class={item.iconClass}></lightning-icon>
+                                            </div>
+                                            <div class="slds-media__body slds-box slds-box_x-small">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-truncate" title={item.titulo}>
+                                                        <strong>{item.titulo}</strong>
+                                                        <template if:true={item.isAgentforce}>
+                                                            <span class="slds-badge slds-badge_inverse slds-m-left_x-small agentforce-pill">
+                                                                <lightning-icon icon-name="utility:bot" size="xx-small" variant="inverse" class="slds-m-right_xx-small"></lightning-icon>
+                                                                Agentforce 360
+                                                            </span>
+                                                        </template>
+                                                    </h3>
+                                                    <div class="slds-timeline__actions-marker">
+                                                        <span class="slds-text-body_small slds-text-color_weak">{item.dataHoraFormatada}</span>
+                                                    </div>
+                                                </div>
+                                                <p class="slds-m-top_xx-small slds-text-body_regular">{item.descricao}</p>
+                                                <p class="slds-m-top_xx-small slds-text-color_weak slds-text-body_small">
+                                                    Responsável: <em>{item.responsavel}</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </template>
+                        </ul>
+                    </template>
+                    <template if:false={temHistorico}>
+                        <p class="slds-text-align_center slds-p-around_medium slds-text-color_weak">
+                            Nenhuma movimentação registrada para esta solicitação.
+                        </p>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

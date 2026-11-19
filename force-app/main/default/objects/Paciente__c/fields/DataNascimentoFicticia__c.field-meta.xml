@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DataNascimentoFicticia__c</fullName>
+    <description>Data de nascimento sintética para fins de cálculo de faixa etária administrativa.</description>
+    <label>Data de Nascimento Fictícia</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PermiteCancelamentoDireto__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Indica se a solicitação pode ser cancelada diretamente sem passar por análise.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Permite Cancelamento Direto</label>
+    <type>Checkbox</type>
+</CustomField>

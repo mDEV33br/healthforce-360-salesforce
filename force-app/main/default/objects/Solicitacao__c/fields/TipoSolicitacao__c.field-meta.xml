@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TipoSolicitacao__c</fullName>
+    <description>Categoria do serviço administrativo solicitado na rede.</description>
+    <label>Tipo de Solicitação</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Consulta Especializada</fullName>
+                <default>true</default>
+                <label>Consulta Especializada</label>
+            </value>
+            <value>
+                <fullName>Exame de Apoio Diagnóstico</fullName>
+                <default>false</default>
+                <label>Exame de Apoio Diagnóstico</label>
+            </value>
+            <value>
+                <fullName>Acompanhamento Pós-Alta</fullName>
+                <default>false</default>
+                <label>Acompanhamento Pós-Alta</label>
+            </value>
+            <value>
+                <fullName>Transporte Sanitário Eletivo</fullName>
+                <default>false</default>
+                <label>Transporte Sanitário Eletivo</label>
+            </value>
+            <value>
+                <fullName>Orientação Administrativa</fullName>
+                <default>false</default>
+                <label>Orientação Administrativa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

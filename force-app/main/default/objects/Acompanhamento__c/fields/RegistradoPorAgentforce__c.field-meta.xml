@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RegistradoPorAgentforce__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flag de auditoria que identifica se a anotação foi inserida via ação autônoma/assistida do Agentforce 360.</description>
+    <label>Registrado por Agentforce</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

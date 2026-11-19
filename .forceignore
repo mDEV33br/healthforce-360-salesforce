@@ -1,0 +1,16 @@
+# Built-in Salesforce DX ignores
+.git
+.gitignore
+.salesforce
+.sf
+.sfdx
+package.json
+package-lock.json
+
+# Local scripts & docs not deployed as Salesforce metadata
+docs/**
+scripts/**
+linkedin/**
+data/**
+README.md
+LICENSE

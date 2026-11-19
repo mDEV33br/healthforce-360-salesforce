@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solicitacao__c</fullName>
+    <description>Solicitação administrativa à qual este acompanhamento pertence.</description>
+    <label>Solicitação</label>
+    <referenceTo>Solicitacao__c</referenceTo>
+    <relationshipLabel>Acompanhamentos Administrativos</relationshipLabel>
+    <relationshipName>Acompanhamentos</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

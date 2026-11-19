@@ -1,0 +1,47 @@
+{
+  "agentName": "Healthforce_Assistant_360",
+  "developerName": "HealthforceAssistant360",
+  "label": "Healthforce Assistant 360",
+  "description": "Agente autônomo Agentforce 360 para consulta e governança da jornada administrativa do paciente.",
+  "role": "Assistente Administrativo de Gestão da Saúde e Regulação",
+  "company": "Healthforce 360 (Protótipo Experimental)",
+  "language": "pt_BR",
+  "topics": [
+    {
+      "name": "Consulta_Status_Jornada",
+      "description": "Consultar o andamento de solicitações de consultas e exames de pacientes sintéticos.",
+      "classificationExamples": [
+        "Qual o status da minha solicitação SOL-2026-00001?",
+        "Como está o encaminhamento do paciente PAC-BR-001?",
+        "Verifique o SLA da solicitação do paciente Alfa"
+      ],
+      "actions": [
+        "AgentforceConsultarStatusAction"
+      ]
+    },
+    {
+      "name": "Registro_Acompanhamento_Administrativo",
+      "description": "Registrar eventos, contatos administrativos e justificativas na solicitação.",
+      "classificationExamples": [
+        "Registrar que entrei em contato com o paciente",
+        "Adicionar nota administrativa na solicitação",
+        "Anotar que o paciente compareceu para apresentar documentos"
+      ],
+      "actions": [
+        "AgentforceRegistrarAcompanhamentoAction"
+      ]
+    },
+    {
+      "name": "Visao_Regulacao_Pendencias",
+      "description": "Listar gargalos e solicitações pendentes por UBS ou hospital da rede.",
+      "classificationExamples": [
+        "Quais as pendências da UBS Central?",
+        "Mostre as solicitações atrasadas da unidade UBS Esperança",
+        "Relatório de pendências por CNES"
+      ],
+      "actions": [
+        "AgentforceConsultarPendenciasAction"
+      ]
+    }
+  ]
+}

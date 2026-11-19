@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnidadeOrigem__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Unidade de saúde solicitante ou de acolhimento inicial.</description>
+    <label>Unidade de Origem</label>
+    <referenceTo>UnidadeSaude__c</referenceTo>
+    <relationshipLabel>Solicitações de Origem</relationshipLabel>
+    <relationshipName>SolicitacoesOrigem</relationshipName>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

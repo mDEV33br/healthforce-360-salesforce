@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TipoUnidade__c</fullName>
+    <description>Classificação do estabelecimento na rede de atenção à saúde.</description>
+    <label>Tipo de Unidade</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unidade Básica de Saúde (UBS)</fullName>
+                <default>true</default>
+                <label>Unidade Básica de Saúde (UBS)</label>
+            </value>
+            <value>
+                <fullName>Unidade de Pronto Atendimento (UPA)</fullName>
+                <default>false</default>
+                <label>Unidade de Pronto Atendimento (UPA)</label>
+            </value>
+            <value>
+                <fullName>Centro de Especialidades Médicas</fullName>
+                <default>false</default>
+                <label>Centro de Especialidades Médicas</label>
+            </value>
+            <value>
+                <fullName>Hospital Geral de Referência</fullName>
+                <default>false</default>
+                <label>Hospital Geral de Referência</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

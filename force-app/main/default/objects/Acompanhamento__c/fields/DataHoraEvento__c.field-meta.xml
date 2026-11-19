@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DataHoraEvento__c</fullName>
+    <defaultValue>NOW()</defaultValue>
+    <description>Momento de ocorrência do fato ou registro do acompanhamento.</description>
+    <label>Data e Hora do Evento</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>
